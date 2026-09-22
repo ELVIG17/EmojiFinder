@@ -1,0 +1,22 @@
+.form {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* центрируем по горизонтали */
+
+  /* Подбираем top так, чтобы середина формы была на границе header/main */
+  /* Начни с такого значения и подгоняй под свой дизайн */
+  top: 270px;
+
+  width: min(90%, 600px); /* чтобы не вылезал за экран */
+  z-index: 10; /* поверх остальных */
+}
+
+.input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}

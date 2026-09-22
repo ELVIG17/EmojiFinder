@@ -1,0 +1,18 @@
+/* src/components/Menu/Menu.module.css */
+.menu {
+  /* по желанию: padding, background и т.д. */
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  /* можно убрать фон/бордеры, если они теперь в Card */
+}

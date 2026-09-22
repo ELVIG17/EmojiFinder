@@ -1,0 +1,55 @@
+.page {
+  min-height: 100vh;
+  position: relative; /* важно для absolute у Placeholder */
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+
+.main {
+  padding: 32px 0 64px;
+  display: grid;
+  gap: 40px;
+    
+}
+
+/* HERO — основная раскладка grid */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero__text {
+  display: flex;              /* внутри — flex */
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero__media {
+  display: flex;              /* чтобы удобно центрировать картинку */
+  justify-content: flex-end;
+}
+
+.hero__img {
+  width: min(520px, 100%);
+  height: auto;
+}
+
+/* Карточки — grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* адаптив */
+@media (max-width: 1024px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero { grid-template-columns: 1fr; }
+  .hero__media { justify-content: center; }
+}
+
+@media (max-width: 520px) {
+  .cards { grid-template-columns: 1fr; }
+}

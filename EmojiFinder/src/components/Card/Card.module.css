@@ -1,0 +1,42 @@
+/* src/components/Card/Card.module.css */
+.card {
+  background: #ffffff;
+  display: flex;
+  border-radius: 12px;
+  padding: 16px;
+  width: 316px;
+  height: 184px;
+  justify-content: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35); /* более тёмная тень */ /* тень для каждой карточки */
+}
+
+/* остальные стили (.emoji, .body, .title, .code) оставь как есть */
+
+
+.emoji {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  background: rgba(255,255,255,.06);
+  border-radius: 14px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 14px;
+}
+
+.code {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}

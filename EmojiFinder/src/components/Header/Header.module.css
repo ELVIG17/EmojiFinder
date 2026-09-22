@@ -1,0 +1,28 @@
+.header {
+  height: 295px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background-color: #196B78;
+}
+
+.inner {
+  width: 100%;
+  display: flex;                 /* header = flex */
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+}
+
+
+
+.button {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
