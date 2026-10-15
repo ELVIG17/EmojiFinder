@@ -1,17 +1,23 @@
-/* src/components/Card/Card.module.css */
 .card {
-  background: #ffffff;
-  display: flex;
-  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
   padding: 16px;
-  width: 316px;
-  height: 184px;
-  justify-content: center;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35); /* более тёмная тень */ /* тень для каждой карточки */
+  color: var(--text);   /* основной цвет текста */
+
+  display: flex;
+  flex-direction: column;  /* было row — стало column */
+  gap: 12px;
+  align-items: center;
+  min-width: 316px;
+
+    box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 1px 0 rgba(255, 255, 255, 0.04) inset;
+
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  
 }
-
-/* остальные стили (.emoji, .body, .title, .code) оставь как есть */
-
 
 .emoji {
   width: 44px;
@@ -23,20 +29,20 @@
   border-radius: 14px;
 }
 
-.body {
+.info {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  min-width: 0;
 }
 
 .title {
-  margin: 0;
-  font-size: 14px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
 }
 
+
+
 .code {
-  margin: 0;
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--muted);  /* только вторичный текст оставляем тусклее */
 }

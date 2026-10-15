@@ -3,9 +3,9 @@ import styles from "./Menu.module.css";
 import Card from "../Card/Card";
 
 const menuItems = [
-  { title: "Home", emoji: "🏠", code: "MENU-001" },
-  { title: "Features", emoji: "✨", code: "MENU-002" },
-  { title: "Pricing", emoji: "💰", code: "MENU-003" },
+  { title: "100", emoji: "🏠", code: "Hundred, points, symbol, wow, win, perfect, parties" },
+  { title: "1234", emoji: "✨", code: "input symbol for numbers symbol" },
+  { title: "1234", emoji: "💰", code: "input symbol for numbers symbol" },
 ];
 
 export default function Menu() {
